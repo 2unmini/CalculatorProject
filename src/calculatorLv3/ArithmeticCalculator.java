@@ -35,6 +35,12 @@ public class ArithmeticCalculator {
                     result= operation.divide(num1,num2);;
                     break;
                 }
+            default:
+                try {
+                    throw new Exception();
+                } catch (Exception e) {
+                    System.out.println("올바른 연산자(+,-, *, /)만 입력하시오");;
+                }
         }
         list.add(result);
         return result;

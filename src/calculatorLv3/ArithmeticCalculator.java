@@ -19,6 +19,7 @@ public class ArithmeticCalculator {
     public double calculate(int num1, int num2, char oper){
         switch (oper) {
             case '+':
+
                 result= operation.add(num1,num2);
                 break;
             case '-':

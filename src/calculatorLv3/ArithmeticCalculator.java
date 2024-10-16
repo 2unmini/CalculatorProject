@@ -1,23 +1,22 @@
-package calculator;
+package calculatorLv3;
 
 import java.util.ArrayList;
 
-public class Calculator {
-    private ArrayList<Integer> list = new ArrayList<>();
-    public ArrayList<Integer> getList() {
+public class ArithmeticCalculator {
+    private ArrayList<Double> list = new ArrayList<>();
+    public ArrayList<Double> getList() {
         return list;
     }
 
-    public void setList(ArrayList<Integer> list) {
+    public void setList(ArrayList<Double> list) {
         this.list = list;
     }
 
-    private int result;
-    Operation operation=new Operation();
+    Operation<Integer> operation=new Operation();
+    double result=0;
 
 
-
-    public int calculate(int num1, int num2, char oper){
+    public double calculate(int num1, int num2, char oper){
         switch (oper) {
             case '+':
                 result= operation.add(num1,num2);
@@ -42,7 +41,7 @@ public class Calculator {
     }
 
     public void removeResult(){
-        int remove =list.get(0);
+        Double remove =list.get(0);
         list.remove(list.get(0));
         System.out.println(remove+" 가 제거 되었습니다.");
         System.out.println("현재 기록: " + list.toString());

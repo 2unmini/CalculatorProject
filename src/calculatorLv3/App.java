@@ -4,7 +4,6 @@ package calculatorLv3;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class App {
 
@@ -53,7 +52,7 @@ public class App {
 
             if(max.toLowerCase().equals("yes")){
                 System.out.println("기준 값을 입력해 주세요");
-                double comparisonValue=sc.nextInt();
+                double comparisonValue=sc.nextDouble();
                 ArrayList<Double> list = arithmeticCalculator.getResultList();
                 maxList(comparisonValue,list);
             }

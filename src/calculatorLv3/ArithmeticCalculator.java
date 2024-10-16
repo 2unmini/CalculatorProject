@@ -43,7 +43,7 @@ public class ArithmeticCalculator {
 
     public void removeResult() { // 저장된 결과 리스트에 가장 최근 값을 삭제하는 메소드
         Double remove = resultList.get(0);
-        resultList.remove(resultList.get(0));
+        resultList.remove(remove);
         System.out.println(remove + " 가 제거 되었습니다.");
         System.out.println("현재 기록: " + resultList.toString());
     }

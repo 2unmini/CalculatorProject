@@ -33,7 +33,7 @@ public class Calculator {
                     System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
                     break;
                 }else {
-                    result= operation.divide(num1,num2);; // 분모가 0이 아니면 /기능을 하는 메소드 호출
+                    result= operation.divide(num1,num2); // 분모가 0이 아니면 /기능을 하는 메소드 호출
                     break;
                 }
             default: // 올바른 연산자가 아닐 경우 올바른 연산자를 입력하라는 예외를 던짐
